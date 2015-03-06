@@ -5,5 +5,6 @@ I used
 *	vim-colors-solarized
 *	vim-fugitive
 *	vim-golang
+* 	SuperTab
 
 This repository will grow if I continue learning new things.
