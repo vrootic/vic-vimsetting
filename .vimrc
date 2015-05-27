@@ -7,8 +7,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'jnwhiteh/vim-golang'
+Plugin 'fatih/vim-go'
 Plugin 'ervandew/supertab'
+Plugin 'tomasr/molokai'
 
 call vundle#end()
 filetype plugin indent on
@@ -22,4 +23,4 @@ set ruler
 set hlsearch
 set ic
 set ru
-colorscheme solarized
+let g:molokai_original = 1

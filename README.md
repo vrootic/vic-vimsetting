@@ -4,7 +4,7 @@ I used
 *	Vundle.vim
 *	vim-colors-solarized
 *	vim-fugitive
-*	vim-golang
+*	vim-go
 * 	SuperTab
 
 This repository will grow if I continue learning new things.
