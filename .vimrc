@@ -9,7 +9,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'fatih/vim-go'
 Plugin 'ervandew/supertab'
-Plugin 'tomasr/molokai'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -23,4 +24,13 @@ set ruler
 set hlsearch
 set ic
 set ru
-let g:molokai_original = 1
+colorscheme google
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+" NERDTree
+autocmd vimenter * NERDTree
