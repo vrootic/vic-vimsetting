@@ -11,20 +11,23 @@ Plugin 'fatih/vim-go'
 Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
+Plugin 'rust-lang/rust.vim'
+Plugin 'eshock/vim-matchit'
 
 call vundle#end()
 filetype plugin indent on
 
 syntax on
-set shiftwidth=4
 set tabstop=4
-set softtabstop=4
+set shiftwidth=4
+set expandtab
 set nu
 set ruler
 set hlsearch
 set ic
 set ru
-colorscheme google
+set mouse=nv
+colorscheme Tomorrow-Night-Bright 
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -33,4 +36,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 " NERDTree
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+map <C-n> :NERDTreeToggle<CR>
