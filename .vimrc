@@ -12,10 +12,11 @@ Plugin 'fatih/vim-go'
 Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
-Plugin 'rust-lang/rust.vim'
 Plugin 'eshock/vim-matchit'
 Plugin 'bling/vim-airline'
 Plugin 'darkburn'
+Plugin 'scrooloose/syntastic'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,12 +25,16 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set backspace=2
 set nu
 set ruler
 set hlsearch
 set ic
 set ru
-colors darkburn 
+set splitbelow
+set splitright
+set bg=dark
+colors solarized 
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -68,3 +73,5 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
+" vim solarized
+call togglebg#map("<F5>")
