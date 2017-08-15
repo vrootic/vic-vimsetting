@@ -7,7 +7,6 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'fatih/vim-go'
 Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
@@ -34,7 +33,7 @@ set ru
 set splitbelow
 set splitright
 set bg=dark
-colors solarized 
+colorscheme molokai
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -73,5 +72,3 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
-" vim solarized
-call togglebg#map("<F5>")
