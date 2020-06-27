@@ -4,5 +4,8 @@ I used
 *   Vundle.vim
 *   vim-fugitive
 *   nerdtree
+*   vim-surround
+*   vim-autotag
+*   tagbar
 
 This repository will grow if I continue learning new things.
