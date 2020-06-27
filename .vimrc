@@ -8,6 +8,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'craigemery/vim-autotag'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 filetype plugin indent on
@@ -36,6 +39,9 @@ nnoremap <C-L> <C-W><C-L>
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '😗'
 let g:NERDTreeDirArrowCollapsible = '😛'
+
+" Tagbar
+map <F12> :TagbarToggle<CR>
 
 
 
