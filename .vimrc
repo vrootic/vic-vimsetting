@@ -11,6 +11,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'craigemery/vim-autotag'
 Plugin 'majutsushi/tagbar'
+Plugin 'zsh-users/zsh-autosuggestions'
 
 call vundle#end()
 filetype plugin indent on
